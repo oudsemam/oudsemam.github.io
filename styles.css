@@ -5,23 +5,15 @@
     font-family: 'Raleway', sans-serif;
     font-size: 100%;
     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     display: flex;
     font-size: 16px;
-    display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     background-color:#F4FAF8;
-}
-
-header {
-    display: block;
-}
-
-div {
-    display: block;
 }
 
 #gradient {
@@ -29,7 +21,8 @@ div {
 }
 
 .navbar_navbar {
-    position: absolute;
+    /* position: relative; */
+    z-index: 999;
     width: 100%;
     height: 3.5rem;
     display: flex;
@@ -44,4 +37,48 @@ div {
 }
 .navbar_icon img {
     height: 1.5rem;
+}
+
+#home_home {
+    background-color: #F4FAF8;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.home_main {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    position: static;
+    text-align: center;
+    background: #435c5f;
+    background-image: url(././images/Banner_notext.jpg);
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #435c5f;
+    color: #F4FAF8;
+    justify-content: space-between;
+    font-size: 250%;
+}
+
+#biology {
+    margin-top: 8rem;
+    font-style: italic;
+    color: #F4FAF8;
+    background-color: rgba(244, 250, 248 0.2);
+    border-radius: 8px;
+}
+
+#future {
+    margin-top: 15rem;
+    color: #3783cb;
+}
+
+section {
+    padding: 8vh;
 }
